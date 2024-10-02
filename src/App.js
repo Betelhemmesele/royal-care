@@ -1,25 +1,22 @@
-
 import './App.css';
+import Header from '../src/components/Header'; // Import the Header component
+import Home from '../src/pages/Home';
+import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        {/* Include Header component */}
+        <Header />
+
+        <Home />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+
+
