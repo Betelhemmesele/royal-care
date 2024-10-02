@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom'; // assuming you're using react-router-d
 import image from '../assets/royal.jpeg'
 const Header = () => {
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto px-2 flex justify-between items-center">
+    <header  className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div className="container ml-72 px-2 flex items-center">
         {/* Logo Section */}
         <div className="flex items-center">
           <img src={image} alt="Royal Care Logo" className="h-32 w-32 w-auto" />
-          <span className="ml-3 text-xl font-bold text-blue-600">Royal Care Transportation</span>
+          <span className="ml-3 text-xl font-bold text-blue-900">Royal Care Transportation</span>
         </div>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-8">
-          <Link to="/" className="text-gray-700 hover:text-blue-600 transition duration-300">
+          <Link to="/" className="text-gray-700 hover:text-blue-600 ml-48 transition duration-300">
             Home
           </Link>
           <Link to="/services" className="text-gray-700 hover:text-blue-600 transition duration-300">
