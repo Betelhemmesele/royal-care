@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // assuming you're using react-router-dom for navigation
-import { FaPhone } from 'react-icons/fa'; // import a phone icon from react-icons
+import {FaPhoneAlt} from 'react-icons/fa'; // import a phone icon from react-icons
 import image from '../assets/royal.jpeg';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
+      <div className="container mx-auto my-0 px-4 md:px-8 flex items-center justify-between">
         {/* Large Screen Logo Section (Only for md and above) */}
         <div className="flex items-center md:flex hidden">
           <img src={image} alt="Royal Care Logo" className="h-16 w-auto" />
@@ -115,12 +115,12 @@ const Header = () => {
 
           {/* Logo and Title (center for small screens) */}
           <div className="flex items-center mx-auto">
-            <img src={image} alt="Royal Care Logo" className="h-32 w-40" />
+            <img src={image} alt="Royal Care Logo" className="h-28 w-40" />
           </div>
 
           {/* Call Icon (right side) */}
           <a href="tel:+1234567890" className="text-orange-900 hover:text-orange-700 transition duration-300">
-            <FaPhone className="w-6 h-6" />
+            <FaPhoneAlt className="w-6 h-6" />
           </a>
         </div>
       </div>
@@ -132,7 +132,7 @@ const Header = () => {
           <div className="fixed inset-0 bg-black bg-opacity-30 z-40" onClick={toggleMenu}></div>
 
           {/* Slide-in menu (half of the screen) */}
-          <div className="fixed top-0 left-0 w-2/3 h-full bg-white shadow-md z-50 transition-transform transform duration-300 ease-in-out">
+          <div className="fixed top-0 left-0 w-2/3 h-full bg-white shadow-md z-50 transition-transform transform duration-500 ease-in-out">
             <div className="flex flex-col items-start space-y-2 py-4 px-4">
               {/* Menu Items */}
               <button
