@@ -40,7 +40,7 @@ const Home = () => {
       backgroundRepeat: 'no-repeat', // Prevents the image from repeating
     }}
   >
-  <div className="absolute inset-0 bg-black  bg-opacity-30 md:bg-opacity-10"></div> {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black  bg-opacity-5 md:bg-opacity-5"></div> {/* Dark overlay */}
     <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 w-full">
       <div className="flex flex-col md:flex-row md:items-start">
         {/* Left Section */}
@@ -66,7 +66,7 @@ const Home = () => {
               Contact Us
             </button>
             <button className="mt-4 sm:mt-0 sm:ml-2 w-auto bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-              Book a Voyage
+              Book a Trip
             </button>
           </div>
         </div>
@@ -147,7 +147,7 @@ const Home = () => {
       {/* Service Card 2 */}
       <div className="bg-gray-200 flex flex-col rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
         <img
-          src="https://cdn.visitingangels.com/cgcimages/transportation-main.jpg" // Replace with your image URL
+          src="https://dis-leur.fr/wp-content/uploads/2021/09/istockphoto-1159637659-170667a.jpg" // Replace with your image URL
           alt="Comfortable and Safe Vehicles"
           className="w-full h-64 object-cover rounded-t-lg" // Increased height
         />
@@ -213,10 +213,10 @@ const Home = () => {
 <section className="section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-40">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-81"
+        className="absolute inset-0 bg-cover bg-center opacity-100"
         style={{
           backgroundImage:
-            "url('https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg')",
+            "url('https://www.itl.cat/pngfile/big/95-958689_bg-chocolate-brown-background-design.png')",
         }}
       ></div>
 
@@ -277,7 +277,7 @@ const Home = () => {
     <div className="lg:w-1/2">
         <img 
           src="https://img.freepik.com/premium-photo/smiling-elderly-couple-park_1022456-199628.jpg" 
-          alt="Testimonial Image" 
+          alt="Testimonial" 
           className="w-full rounded-lg shadow-lg object-cover"
         />
       </div>
@@ -316,7 +316,7 @@ const Home = () => {
       ></div>
 
       {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-gray-900 opacity-40 rounded-lg"></div>
+      <div className="absolute inset-0 bg-gray-900 opacity-50 rounded-lg"></div>
 
       {/* Content */}
       <div className="relative z-10 rounded-lg shadow-lg p-8 md:p-10">

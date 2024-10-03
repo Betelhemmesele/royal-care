@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // assuming you're using react-router-dom for navigation
 import {FaPhoneAlt} from 'react-icons/fa'; // import a phone icon from react-icons
-import image from '../assets/royal.jpeg';
+import image from '../assets/royal.jpg';
 
 const Header = () => {
   // State for mobile menu toggle
@@ -16,8 +16,8 @@ const Header = () => {
       <div className="container mx-auto my-0 px-4 md:px-8 flex items-center justify-between">
         {/* Large Screen Logo Section (Only for md and above) */}
         <div className="flex items-center md:flex hidden">
-          <img src={image} alt="Royal Care Logo" className="h-16 w-auto" />
-          <span className="ml-3 text-xl font-bold text-blue-900">Royal Care Transportation</span>
+          <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
+          {/* <span className="ml-3 text-xl font-bold text-blue-900">Royal Care Transportation</span> */}
         </div>
 
         {/* Desktop Navigation Links (Only for md and above) */}
@@ -115,7 +115,7 @@ const Header = () => {
 
           {/* Logo and Title (center for small screens) */}
           <div className="flex items-center mx-auto">
-            <img src={image} alt="Royal Care Logo" className="h-28 w-40" />
+            <img src={image} alt="Royal Care Logo" className="h-24 w-40" />
           </div>
 
           {/* Call Icon (right side) */}
