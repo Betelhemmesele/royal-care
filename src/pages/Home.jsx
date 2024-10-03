@@ -1,5 +1,6 @@
 
 import { useEffect,useState } from 'react';
+import { FaUserTie,FaCheckCircle, FaCarSide, FaClock, FaDollarSign, FaShieldAlt, FaHandsHelping,FaHeart } from 'react-icons/fa';
 
 const Home = () => {
   const [showMore, setShowMore] = useState(false);
@@ -33,7 +34,7 @@ const Home = () => {
   <div
     className="relative flex items-center justify-center min-h-screen bg-cover bg-center"
     style={{
-      backgroundImage: `url('https://st4.depositphotos.com/2610399/41394/i/450/depositphotos_413949468-stock-photo-helping-hands-care-for-the.jpg')`,
+      backgroundImage: `url('https://img.freepik.com/free-photo/realistic-scene-with-elderly-care-senior-people_23-2151231448.jpg')`,
       backgroundSize: 'cover', // Ensures the image covers the container
       backgroundPosition: 'center', // Centers the image
       backgroundRepeat: 'no-repeat', // Prevents the image from repeating
@@ -56,17 +57,16 @@ const Home = () => {
           {/* Subheading */}
           <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">
   <li>Transportation</li>
-  <li>Senior Moving Assistance</li>
   <li>Reliable and On-Time</li>
 </ul>
 
           {/* Buttons */}
           <div className="md:mt-4 flex flex-col sm:flex-row sm:justify-start">
             <button className="w-auto bg-orange-900 text-white py-3  px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-              Contact Us!
+              Contact Us
             </button>
             <button className="mt-4 sm:mt-0 sm:ml-2 w-auto bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-              Book a Trip
+              Book a Voyage
             </button>
           </div>
         </div>
@@ -210,6 +210,99 @@ const Home = () => {
     </div>
   </div>
 </section>
+<section className="section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-40">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-81"
+        style={{
+          backgroundImage:
+            "url('https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg')",
+        }}
+      ></div>
+
+      {/* Content */}
+      <div className="container mx-auto max-w-6xl px-4 md:px-2 relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+          Why Choose Royal Care Transportation?
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          {/* Icon 1 */}
+          <div className="flex flex-col items-center">
+            <FaUserTie style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Professional Icon */}
+            <h3 className="text-xl font-semibold text-white">Professional Drivers</h3>
+          </div>
+
+          {/* Icon 2 */}
+          <div className="flex flex-col items-center">
+            <FaCarSide style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Car/Vehicle Icon */}
+            <h3 className="text-xl font-semibold text-white">Comfortable Vehicles</h3>
+          </div>
+
+          {/* Icon 3 */}
+          <div className="flex flex-col items-center">
+            <FaClock style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Clock Icon */}
+            <h3 className="text-xl font-semibold text-white">On-Time Service</h3>
+          </div>
+
+          {/* Icon 4 */}
+          <div className="flex flex-col items-center">
+            <FaHeart style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Heart Icon */}
+            <h3 className="text-xl font-semibold text-white">Personalized Care</h3>
+          </div>
+          <div className="flex flex-col items-center">
+    <FaDollarSign style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <h3 className="text-xl font-semibold text-white">Affordable Price</h3>
+  </div>
+
+  {/* Safety */}
+  <div className="flex flex-col items-center">
+    <FaShieldAlt style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <h3 className="text-xl font-semibold text-white">Safety First</h3>
+  </div>
+  <div className="flex flex-col items-center">
+    <FaHandsHelping style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <h3 className="text-xl font-semibold text-white">Tailored Support</h3>
+  </div>
+  <div className="flex flex-col items-center">
+    <FaCheckCircle style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <h3 className="text-xl font-semibold text-white">Reliable Service</h3>
+  </div>
+        </div>
+      </div>
+    </section>
+    <section className="section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-20 bg-gray-100">
+  <div className="container mx-auto max-w-6xl px-4 md:px-8">
+    <div className="flex flex-col lg:flex-row items-center">
+    <div className="lg:w-1/2">
+        <img 
+          src="https://img.freepik.com/premium-photo/smiling-elderly-couple-park_1022456-199628.jpg" 
+          alt="Testimonial Image" 
+          className="w-full rounded-lg shadow-lg object-cover"
+        />
+      </div>
+     
+      <div className="lg:w-1/2 mb-8 lg:mb-0">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+        <p className="text-gray-700 mb-6">
+          "Royal Care Transportation has been a lifesaver for our family! My father needs regular dialysis appointments, and the team has been incredibly reliable and caring. The drivers are always on time, courteous, and assist him with getting in and out of the vehicle. We feel so much peace of mind knowing he's in good hands. Highly recommend their service to anyone in need of elderly transportation."
+        </p>
+        <p className="text-gray-700 mb-8 italic">- Laura G., Katy, TX</p>
+        
+        <a 
+          href="/testimonials" // Link to the testimonial page
+          className="bg-orange-900 text-white py-3 px-6 rounded-lg mt-10 hover:bg-orange-800 transition duration-200"
+        >
+          See Reviews
+        </a>
+      </div>
+      
+ 
+     
+    </div>
+  </div>
+</section>
+
 
 <section className="section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-20">
   <div className="container mx-auto max-w-6xl px-4 md:px-2">
@@ -227,9 +320,9 @@ const Home = () => {
 
       {/* Content */}
       <div className="relative z-10 rounded-lg shadow-lg p-8 md:p-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Contact Us Today</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Experience the Royal Treatment?</h2>
         <p className="text-white mb-6">
-          Have a trip or need further information, please don't hesitate to reach out. We're here to help!
+        Booking your ride with Royal Care Transportation is easy and hassle-free. Whether you need transportation for a single trip or regular scheduled services, we are here to accommodate your needs.
         </p>
         <a 
           href="/contact" // Link to your contact page
