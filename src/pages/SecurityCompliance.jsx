@@ -56,7 +56,7 @@ const safetyData = [
 const SafetyCompliancePage = () => {
   return (
     <div className="max-w-7xl mx-auto pt-16 pb-2 px-4 mt-28 sm:px-6 lg:px-8">
-      <div className="text-center p-8 bg-gray-100 border-orange-700 border-x-2 mb-12">
+      <div className="text-center p-8 bg-gray-100 rounded-lg border-orange-700 border-x-2 mb-12">
         <h1 className="text-4xl font-extrabold text-orange-900">Safety and Compliance</h1>
         <p className="text-lg mt-4 text-black">
           At Royal Care Transportation, the safety and well-being of our passengers are our top priorities. We are committed to providing reliable, secure, and comfortable transportation services for seniors and individuals with special needs.

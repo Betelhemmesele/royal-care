@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import TestimonialPage from '../src/pages/Testimonial';
 import  SafetyCompliancePage from '../src/pages/SecurityCompliance';
 import ContactUsPage from '../src/pages/ContactUs';
+import RequestTripPage from '../src/pages/RequestTrip';
 function App() {
   return (
     <Router>
@@ -23,7 +24,7 @@ function App() {
           <Route path="/testimonials" element={< TestimonialPage />} />
           <Route path="/compliance" element={< SafetyCompliancePage />} />
           <Route path="/contact-us" element={< ContactUsPage />} />
-
+           <Route path="/request-trip" element={< RequestTripPage />} />
         </Routes>
 
         <Footer />
