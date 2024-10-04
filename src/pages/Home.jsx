@@ -58,20 +58,20 @@ const Home = () => {
            </p>
           {/* Subheading */}
           <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">
-  <li>On-Time</li>
-  <li>Reliable</li>
+  
+  <li>Reliable and Ontime</li>
   <li>24-Hour</li>
 </ul>
 
           {/* Buttons */}
           <div className="md:mt-4 flex flex-col sm:flex-row sm:justify-start">
   <Link to="/contact-us">
-    <button className="w-auto bg-orange-900 text-white py-3 px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
+    <button className="w-48 bg-orange-900 text-white py-3 px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
       Contact Us
     </button>
   </Link>
   <Link to="/request-trip">
-    <button className="mt-4 sm:mt-0 sm:ml-2 w-auto bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
+    <button className="mt-4 sm:mt-0 sm:ml-2 w-48 bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
       Book a Trip
     </button>
   </Link>
