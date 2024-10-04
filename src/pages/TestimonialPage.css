@@ -1,0 +1,22 @@
+/* TestimonialPage.css */
+
+.slick-dots li {
+    width: 20px; /* Adjust the width of the dot */
+    height: 20px;
+    margin-bottom: 10px; /* Adjust the height of the dot */
+  }
+  
+  .slick-dots li button {
+    font-size: 0; /* Hide the text inside the button */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 20px; /* Adjust the font size to increase the dot size */
+    color: rgb(199, 67, 6); /* Change to your desired color */
+    line-height: 20px; /* Center the dot */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: rgb(100, 41, 2); /* Change color of active dot */
+  }
+  
