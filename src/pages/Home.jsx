@@ -58,8 +58,8 @@ const Home = () => {
            </p>
           {/* Subheading */}
           <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">
-  
-  <li>Reliable and Ontime</li>
+          <li>Reliable</li>
+  <li>Ontime</li>
   <li>24-Hour</li>
 </ul>
 
