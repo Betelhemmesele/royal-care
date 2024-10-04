@@ -1,7 +1,10 @@
 
 import { useEffect,} from 'react';
-import { FaUserTie,FaCheckCircle, FaCarSide, FaClock, FaDollarSign, FaShieldAlt, FaHandsHelping,FaHeart } from 'react-icons/fa';
-import CardSection from '../components/Contactcard'
+import { FaUserTie,FaCheckCircle, FaCarSide, FaClock, FaDollarSign, FaShieldAlt,FaHeart } from 'react-icons/fa';
+import CardSection from '../components/Contactcard';
+import { AiOutlineClockCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+
 const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -55,19 +58,24 @@ const Home = () => {
            </p>
           {/* Subheading */}
           <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">
-  <li>Transportation</li>
-  <li>Reliable and On-Time</li>
+  <li>On-Time</li>
+  <li>Reliable</li>
+  <li>24-Hour</li>
 </ul>
 
           {/* Buttons */}
           <div className="md:mt-4 flex flex-col sm:flex-row sm:justify-start">
-            <button className="w-auto bg-orange-900 text-white py-3  px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-              Contact Us
-            </button>
-            <button className="mt-4 sm:mt-0 sm:ml-2 w-auto bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-              Book a Trip
-            </button>
-          </div>
+  <Link to="/contact-us">
+    <button className="w-auto bg-orange-900 text-white py-3 px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
+      Contact Us
+    </button>
+  </Link>
+  <Link to="/request-trip">
+    <button className="mt-4 sm:mt-0 sm:ml-2 w-auto bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
+      Book a Trip
+    </button>
+  </Link>
+</div>
         </div>
       </div>
     </div>
@@ -256,8 +264,8 @@ const Home = () => {
     <h3 className="text-xl font-semibold text-white">Safety First</h3>
   </div>
   <div className="flex flex-col items-center">
-    <FaHandsHelping style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
-    <h3 className="text-xl font-semibold text-white">Tailored Support</h3>
+    <AiOutlineClockCircle style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <h3 className="text-xl font-semibold text-white">24-Hour</h3>
   </div>
   <div className="flex flex-col items-center">
     <FaCheckCircle style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
@@ -304,7 +312,7 @@ const Home = () => {
   heading="Ready to Experience the Royal Treatment?"
   content="Booking your ride with Royal Care Transportation is easy and hassle-free. Whether you need transportation for a single trip or regular scheduled services, we are here to accommodate your needs."
   buttonText="Contact Us Today"
-  buttonLink="/contact"
+  buttonLink="/contact-us"
 />
 
 

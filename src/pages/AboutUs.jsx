@@ -111,8 +111,8 @@ const AboutUs = () => {
   backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg" // Background image for the section
   heading="Contact Us"
   content="For inquiries or to schedule a ride, please contact us at (123) 456-7890 or email us at info@royalcaretransportation.com. We look forward to serving you!"
-  buttonText="Send Us an Email"
-  buttonLink="mailto:info@royalcaretransportation.com" // This will open the default mail client
+  buttonText="Contact Us"
+  buttonLink="/contact-us" // This will open the default mail client
 />
 
         </div>

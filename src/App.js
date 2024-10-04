@@ -9,6 +9,7 @@ import TestimonialPage from '../src/pages/Testimonial';
 import  SafetyCompliancePage from '../src/pages/SecurityCompliance';
 import ContactUsPage from '../src/pages/ContactUs';
 import RequestTripPage from '../src/pages/RequestTrip';
+import FaqSection from './pages/Faqs';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/compliance" element={< SafetyCompliancePage />} />
           <Route path="/contact-us" element={< ContactUsPage />} />
            <Route path="/request-trip" element={< RequestTripPage />} />
+           <Route path="/faqs" element={< FaqSection />} />
         </Routes>
 
         <Footer />

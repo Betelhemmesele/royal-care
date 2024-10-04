@@ -75,7 +75,7 @@ const TestimonialPage = () => {
   heading="Send Us Review"
   content="If you have anything to tell the world about us , you are in the right place."
   buttonText="click Here"
-  buttonLink="mailto:info@royalcaretransportation.com" // This will open the default mail client
+  buttonLink="/contact-us" // This will open the default mail client
 />
     </div>
   );
