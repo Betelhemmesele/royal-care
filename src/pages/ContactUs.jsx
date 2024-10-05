@@ -1,43 +1,8 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
 
 const ContactUsPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState(null);
-
-  // Handle form input change
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-
-    // EmailJS integration
-    emailjs.send(
-      'YOUR_SERVICE_ID', 
-      'YOUR_TEMPLATE_ID', 
-      formData, 
-      'YOUR_USER_ID'
-    ).then((response) => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-    }, (err) => {
-      setIsSubmitting(false);
-      setError("Something went wrong. Please try again later.");
-    });
+  const handleGmailRedirect = () => {
+    window.location.href = 'mailto:contact@royalcaretransport.com';
   };
 
   return (
@@ -46,13 +11,12 @@ const ContactUsPage = () => {
       <div className="text-center bg-gray-100 py-16 rounded-lg border-orange-900 border-x-2 mb-12">
         <h1 className="text-4xl font-extrabold text-gray-900">Contact Us</h1>
         <p className="mt-4 text-lg text-gray-600">
-          We’re here to help! If you have any questions, need assistance, or want to learn more about our services, please fill out the form below or reach out using the contact information.
+          We’re here to help! If you have any questions, need assistance, or want to learn more about our services, please reach out using the contact information below or by clicking the button to send us an email.
         </p>
       </div>
 
-      {/* Contact Information and Form */}
+      {/* Contact Information */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center mb-12 max-w-7xl mx-auto">
-        {/* Contact Information */}
         <div className="shadow-lg p-6 border-orange-900 border-y-2 rounded-lg bg-white hover:shadow-xl transition-transform duration-200">
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
           <p className="text-lg text-gray-600">+1 123 456 7890</p>
@@ -64,65 +28,15 @@ const ContactUsPage = () => {
           <p className="text-lg text-gray-600">24-Hours per week</p>
         </div>
 
-        {/* Contact Form */}
+        {/* Redirect to Gmail Button */}
         <div className="bg-white shadow-lg p-8 rounded-lg border-orange-900 border-y-2 hover:shadow-xl transition-transform duration-200">
-          {isSubmitted ? (
-            <p className="text-center text-green-600 text-lg font-semibold mb-6">Your message has been sent successfully!</p>
-          ) : (
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                  Name
-                </label>
-                <input 
-                  id="name" 
-                  name="name" 
-                  type="text" 
-                  value={formData.name} 
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required 
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                  Email
-                </label>
-                <input 
-                  id="email" 
-                  name="email" 
-                  type="email" 
-                  value={formData.email} 
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required 
-                />
-              </div>
-              <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                  Message
-                </label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  value={formData.message} 
-                  onChange={handleChange}
-                  rows="5"
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required 
-                />
-              </div>
-              <div className="text-center">
-                <button 
-                  type="submit" 
-                  className={`px-6 py-2 text-white bg-orange-900 rounded-lg hover:bg-orange-800 transition-colors ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`} 
-                  disabled={isSubmitting}>
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </button>
-                {error && <p className="text-red-600 mt-4">{error}</p>}
-              </div>
-            </form>
-          )}
+          <div className="text-center">
+            <button 
+              onClick={handleGmailRedirect}
+              className="px-6 py-2 text-white bg-orange-900 rounded-lg hover:bg-orange-800 transition-colors">
+              Send Message via Gmail
+            </button>
+          </div>
         </div>
       </div>
     </div>
