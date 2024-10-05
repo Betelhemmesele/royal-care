@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin ,FaGoogle} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Social Media Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-            <div className="flex  ml-28 md:ml-0 space-x-6"> {/* Increased space between social icons */}
+            <div className="flex  justify-center md:justify-start space-x-6"> {/* Increased space between social icons */}
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <FaFacebook className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
@@ -52,6 +52,9 @@ const Footer = () => {
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                 <FaLinkedin className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+              </a>
+              <a href="https://google.com/business" target="_blank" rel="noreferrer">
+                <FaGoogle className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
             </div>
           </div>
