@@ -14,11 +14,12 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto my-0 px-4 md:px-8 flex items-center justify-between">
-        {/* Large Screen Logo Section (Only for md and above) */}
-        <div className="flex items-center md:flex hidden">
-          <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
-          {/* <span className="ml-3 text-xl font-bold text-blue-900">Royal Care Transportation</span> */}
-        </div>
+      <div className="flex items-center md:flex hidden">
+  <Link to="/">
+    <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
+  </Link>
+</div>
+
 
         {/* Desktop Navigation Links (Only for md and above) */}
         <nav className="hidden md:flex space-x-4">
@@ -115,7 +116,10 @@ const Header = () => {
 
           {/* Logo and Title (center for small screens) */}
           <div className="flex items-center mx-auto">
+          <Link to="/">
+
             <img src={image} alt="Royal Care Logo" className="h-24 w-40" />
+            </Link>
           </div>
 
           {/* Call Icon (right side) */}
