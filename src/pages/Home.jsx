@@ -4,7 +4,7 @@ import { FaUserTie,FaCheckCircle, FaCarSide, FaClock, FaDollarSign, FaShieldAlt,
 import CardSection from '../components/Contactcard';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-
+import ServiceCard from '../components/homeService';
 const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -49,30 +49,30 @@ const Home = () => {
         <div className="flex flex-col justify-center text-left text-white w-full md:w-1/2 space-y-4">
           {/* Heading */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          Welcome to Royal Care Transportation
-           
-          </h1>
-        
-           <p className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-1">
-           A Compassionate & High Standard Level of Care for Your Loved One
-           </p>
-          {/* Subheading */}
-          <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">
-          <li>Reliable</li>
-  <li>Ontime</li>
-  <li>24-Hour</li>
-</ul>
-
+                Welcome to Royal Care Transportation
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
+                Your trusted source for <strong>elderly transportation</strong> and <strong>non-emergency medical transport</strong> in <strong>Katy, Texas</strong>.
+              </p>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
+                A Compassionate & High Standard Level of Care for Your Loved One
+              </p>
+              {/* Subheading */}
+              <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">
+                <li>Reliable</li>
+                <li>On-time</li>
+                <li>24-Hour Service</li>
+              </ul>
           {/* Buttons */}
           <div className="md:mt-4 flex flex-col sm:flex-row sm:justify-start">
   <Link to="/contact-us">
     <button className="w-48 bg-orange-900 text-white py-3 px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-      Contact Us
+    Contact Us
     </button>
   </Link>
   <Link to="/request-trip">
     <button className="mt-4 sm:mt-0 sm:ml-2 w-48 bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
-      Book a Trip
+       Book Your Trip
     </button>
   </Link>
 </div>
@@ -119,96 +119,52 @@ const Home = () => {
 
 
 
-<section className="bg-gray-100 section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-20">
+<section className="bg-gray-100 section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-20" aria-labelledby="services-header">
   <div className="container mx-auto max-w-6xl px-4 md:px-2">
-    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-10">Our Services</h2>
-    
+    <h2 id="services-header" className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-10">Our Services</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      {/* Service Card 1 */}
-      <div className="bg-gray-200 flex flex-col rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
-        <img
-          src="https://carro.sg/blog/wp-content/uploads/2017/06/The-MV-1-www.trucktrend.com-news-1507-mobility-ventures-updates-2016-mv-1-with-new-accessibility.jpg"
-          alt="Senior Living Transportation"
-          className="w-full h-64 object-cover rounded-t-lg"
+      {/* Service Cards */}
+      <article className="service-card">
+        <ServiceCard 
+          image="https://carro.sg/blog/wp-content/uploads/2017/06/The-MV-1-www.trucktrend.com-news-1507-mobility-ventures-updates-2016-mv-1-with-new-accessibility.jpg"
+          title="Senior Living Transportation"
+          description="Providing safe and reliable transportation for seniors to and from their senior living facilities."
+          link="/services"
+          alt="Transportation for seniors to living facilities"
         />
-        <div className="p-4 flex-grow flex flex-col">
-          <h3 className="text-2xl text-orange-900 font-semibold mb-2">Senior Living Transportation</h3>
-          <p className="text-gray-700 mb-4">
-            Providing safe, reliable transportation for seniors to and from their senior living facilities.
-          </p>
-          <a 
-            href="/services" 
-            className="bg-orange-900 text-white py-2 px-4 rounded-lg hover:bg-orange-800 transition duration-200 mt-auto"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
+      </article>
 
-      {/* Service Card 2 */}
-      <div className="bg-gray-200 flex flex-col rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
-        <img
-          src="https://dis-leur.fr/wp-content/uploads/2021/09/istockphoto-1159637659-170667a.jpg"
-          alt="Doctor Appointments"
-          className="w-full h-64 object-cover rounded-t-lg"
+      <article className="service-card">
+        <ServiceCard 
+          image="https://dis-leur.fr/wp-content/uploads/2021/09/istockphoto-1159637659-170667a.jpg"
+          title="Doctor Appointments"
+          description="Ensure timely arrival to your medical appointments with our reliable transportation service."
+          link="/services"
+          alt="Transportation for doctor appointments"
         />
-        <div className="p-4 flex-grow flex flex-col">
-          <h3 className="text-2xl text-orange-900 font-semibold mb-2">Doctor Appointments</h3>
-          <p className="text-gray-700 mb-4">
-            Ensure timely arrival to your medical appointments with our reliable transportation service.
-          </p>
-          <a 
-            href="/services" 
-            className="bg-orange-900 text-white py-2 px-4 rounded-lg hover:bg-orange-800 transition duration-200 mt-auto"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
+      </article>
 
-      {/* Service Card 3 */}
-      <div className="bg-gray-200 flex flex-col rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
-        <img
-          src="https://www.shutterstock.com/image-photo/elderly-man-60c-glasses-sitting-600nw-1990042985.jpg"
-          alt="Non-Emergency Transportation"
-          className="w-full h-64 object-cover rounded-t-lg"
+      <article className="service-card">
+        <ServiceCard 
+          image="https://www.shutterstock.com/image-photo/elderly-man-60c-glasses-sitting-600nw-1990042985.jpg"
+          title="Non-Emergency Transportation"
+          description="Specialized services for wheelchair and stretcher transportation, ensuring comfort and safety."
+          link="/services"
+          alt="Non-emergency transportation for seniors"
         />
-        <div className="p-4 flex-grow flex flex-col">
-          <h3 className="text-2xl  text-orange-900 font-semibold mb-2">Non-Emergency Transportation</h3>
-          <p className="text-gray-700 mb-4">
-            Specialized services for wheelchair and stretcher transportation, ensuring comfort and safety.
-          </p>
-          <a 
-            href="/services" 
-            className="bg-orange-900 text-white py-2 px-4 rounded-lg hover:bg-orange-800 transition duration-200 mt-auto"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
+      </article>
 
-      {/* Service Card 4 */}
-      <div className="bg-gray-200 flex flex-col rounded-lg shadow-md transition-transform transform hover:scale-105 h-full">
-        <img
-          src="https://parade.com/.image/t_share/MTkwNTgwOTg0ODcxMzMwOTQx/black-people-covid-vaccine-1-jpg.jpg"
-          alt="COVID-19 Vaccine Transportation"
-          className="w-full h-64 object-cover rounded-t-lg"
+      <article className="service-card">
+        <ServiceCard 
+          image="https://parade.com/.image/t_share/MTkwNTgwOTg0ODcxMzMwOTQx/black-people-covid-vaccine-1-jpg.jpg"
+          title="COVID-19 Vaccine Transportation"
+          description="Providing safe and reliable transportation for individuals receiving their COVID-19 vaccines."
+          link="/services"
+          alt="Transportation for COVID-19 vaccinations"
         />
-        <div className="p-4 flex-grow flex flex-col">
-          <h3 className="text-2xl text-orange-900 font-semibold mb-2">COVID-19 Vaccine Transportation</h3>
-          <p className="text-gray-700 mb-4">
-            Providing safe and reliable transportation for individuals receiving their COVID-19 vaccines.
-          </p>
-          <a 
-            href="/services" 
-            className="bg-orange-900 text-white py-2 px-4 rounded-lg hover:bg-orange-800 transition duration-200 mt-auto"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
-
+      </article>
+      
     </div>
   </div>
 </section>
@@ -311,8 +267,8 @@ const Home = () => {
   backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg"
   heading="Ready to Experience the Royal Treatment?"
   content="Booking your ride with Royal Care Transportation is easy and hassle-free. Whether you need transportation for a single trip or regular scheduled services, we are here to accommodate your needs."
-  buttonText="Contact Us Today"
-  buttonLink="/contact-us"
+  buttonText="Schedule A Ride"
+  buttonLink="/request-trip"
 />
 
 

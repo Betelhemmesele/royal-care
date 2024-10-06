@@ -119,7 +119,7 @@ const Header = () => {
           </div>
 
           {/* Call Icon (right side) */}
-          <a href="tel:+(214)302-3232" className="text-orange-900 hover:text-orange-700 transition duration-300">
+          <a href="tel:+1214302-3232" className="text-orange-900 hover:text-orange-700 transition duration-300">
             <FaPhoneAlt className="w-6 h-6" />
           </a>
         </div>

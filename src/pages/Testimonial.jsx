@@ -73,7 +73,7 @@ const TestimonialPage = () => {
       <CardSection
   backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg" // Background image for the section
   heading="Send Us Review"
-  content="If you have anything to tell the world about us , you are in the right place."
+  content="If you have anything to tell the world about us , please click below."
   buttonText="click Here"
   buttonLink="/contact-us" // This will open the default mail client
 />

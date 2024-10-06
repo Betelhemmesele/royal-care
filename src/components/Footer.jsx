@@ -31,8 +31,8 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
             <ul className="space-y-3">
-              <li><span className="font-semibold">Phone:</span> (123) 456-7890</li>
-              <li><span className="font-semibold">Email:</span> info@royalcaretransportation.com</li>
+              <li><span className="font-semibold">Phone:</span>(214)302-3232</li>
+              <li><span className="font-semibold">Email:</span> Support@royalcaretransportation.com</li>
               <li><span className="font-semibold">Address:</span> 1234 Care St, Compassion City, USA</li>
             </ul>
           </div>

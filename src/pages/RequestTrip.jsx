@@ -40,7 +40,8 @@ const RequestTripPage = () => {
       pickupDate: formData.pickupDate,
       pickupTime: formData.pickupTime,
       tripType: formData.tripType,
-      message: formData.message
+      message: formData.message,
+      cc_email: 'Support@royalcaretransportations.com',
     };
     console.log("Email Params:", emailParams);
     // Send the email using EmailJS
@@ -95,7 +96,7 @@ const RequestTripPage = () => {
         <div className="flex items-center mb-6">
           <FaPhoneAlt className="h-16 w-16 text-orange-700 mr-6" />
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800">Do you want transportation</h2>
+            <h2 className="text-2xl font-semibold text-gray-800">Do you want transportation?</h2>
             <p className="mt-2 text-lg text-gray-600">
               Call us at:
               <a href="tel:+(214)302-3232" className="text-orange-700 font-bold ml-2">
@@ -223,7 +224,7 @@ const RequestTripPage = () => {
 
             {/* Trip Type */}
             <div>
-              <label htmlFor="tripType" className="block text-gray-700 font-bold mb-2">Trip Type</label>
+              <label htmlFor="tripType" className="block text-gray-700 font-bold mb-2">Choose Your Transportation Service</label>
               <select
                 id="tripType"
                 name="tripType"
@@ -232,10 +233,15 @@ const RequestTripPage = () => {
                 required
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
-                <option value="">Select Trip Type</option>
-                <option value="Medical">Medical</option>
-                <option value="Business">Business</option>
-                <option value="Leisure">Leisure</option>
+                <option value="select here">Select here</option>
+                <option value="Senior Living Transportation">Senior Living Transportation</option>
+  <option value="Dr appointments">Dr appointments</option>
+  <option value="Non-Emergency Transportation">Non-Emergency Transportation</option>
+  <option value="Wheelchair Transportation">Wheelchair Transportation</option>
+  <option value="Airport Transportation">Airport Transportation</option>
+  <option value="COVID-19 Vaccine Transportation">COVID-19 Vaccine Transportation</option>
+  <option value="Wheelchair Stretcher">Wheelchair Stretcher</option>
+  <option value="Stretcher">Stretcher</option>
               </select>
             </div>
 

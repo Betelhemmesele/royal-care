@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -24,11 +23,18 @@ const ContactUsPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
+
+    // Add CC email to form data
+    const templateParams = {
+      ...formData, // Includes name, email, message
+      cc_email: 'Support@royalcaretransportations.com' // Adding CC email here
+    };
+
     // EmailJS integration
     emailjs.send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formData,
+      templateParams,  // Send updated formData including CC email
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     ).then((response) => {
       setIsSubmitting(false);
@@ -63,13 +69,13 @@ const ContactUsPage = () => {
         {/* Contact Information */}
         <div className="shadow-lg p-6 border-orange-900 border-y-2 rounded-lg bg-white hover:shadow-xl transition-transform duration-200">
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
-          <p className="text-lg text-gray-600">+1 123 456 7890</p>
+          <p className="text-lg text-gray-600">+1 214 302-3232</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Email</h3>
-          <p className="text-lg text-gray-600">contact@royalcaretransport.com</p>
+          <p className="text-lg text-gray-600">Support@royalcaretransportations.com</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Address</h3>
           <p className="text-lg text-gray-600">123 Main St, Katy, TX 77450</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Working Hours</h3>
-          <p className="text-lg text-gray-600">24-Hours per week</p>
+          <p className="text-lg text-gray-600">24-Hours</p>
         </div>
 
         {/* Contact Form */}
