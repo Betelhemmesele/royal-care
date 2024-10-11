@@ -1,0 +1,6 @@
+.background-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--background-image-url); /* Default image can be set here */
+  }

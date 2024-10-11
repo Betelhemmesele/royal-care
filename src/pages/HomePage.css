@@ -1,0 +1,32 @@
+.hero-section {
+    background-image: url('https://img.freepik.com/free-photo/realistic-scene-with-elderly-care-senior-people_23-2151231448.jpg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  .dark-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .section1 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .background-image-section {
+    background-image: url('https://www.itl.cat/pngfile/big/95-958689_bg-chocolate-brown-background-design.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .icon {
+    color: #FFFFFF;
+    font-size: 7rem; /* Adjust size as necessary */
+    margin-bottom: 1rem;
+  }

@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import './ContactCard.css'
 const CardSection = ({
   backgroundImage,
   overlayColor = "bg-gray-900",
@@ -17,12 +17,10 @@ const CardSection = ({
       <div className="container mx-auto max-w-6xl px-4 md:px-2">
         <div className="relative">
           {/* Background image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center rounded-lg"
-            style={{
-              backgroundImage: `url('${backgroundImage}')`,
-            }}
-          ></div>
+          <div 
+  className="background-image absolute inset-0 rounded-lg" 
+  style={{ '--background-image-url': `url(${backgroundImage})` }}
+></div>
 
           {/* Overlay for better text visibility */}
           <div className={`absolute inset-0 ${overlayColor} ${overlayOpacity} rounded-lg`}></div>

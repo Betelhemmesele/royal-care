@@ -5,6 +5,7 @@ import CardSection from '../components/Contactcard';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/homeService';
+import './HomePage.css';
 const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -34,13 +35,7 @@ const Home = () => {
   return (
     <div className="relative">
   <div
-    className="relative flex items-center justify-center min-h-screen bg-cover bg-center"
-    style={{
-      backgroundImage: `url('https://img.freepik.com/free-photo/realistic-scene-with-elderly-care-senior-people_23-2151231448.jpg')`,
-      backgroundSize: 'cover', // Ensures the image covers the container
-      backgroundPosition: 'center', // Centers the image
-      backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-    }}
+    className="hero-section relative flex items-center justify-center min-h-screen bg-cover bg-center"
   >
   <div className="absolute inset-0 bg-black  bg-opacity-5 md:bg-opacity-5"></div> {/* Dark overlay */}
     <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 w-full">
@@ -91,7 +86,7 @@ const Home = () => {
     {/* Image on one half */}
     <div className="w-full md:w-1/2 mb-8 md:mb-0">
       <img
-        src="https://st3.depositphotos.com/13194036/18504/i/450/depositphotos_185049012-stock-photo-care.jpg"
+        src="https://st3.depositphotos.com/13194036/18504/i/450/depositphotos_185049012-stock-photo-care.jpg"//oldppl
         alt="Royal Care Transportation"
         className="w-full h-auto rounded-full md:rounded-lg shadow-md"
       />
@@ -137,7 +132,7 @@ const Home = () => {
 
       <article className="service-card">
         <ServiceCard 
-          image="https://dis-leur.fr/wp-content/uploads/2021/09/istockphoto-1159637659-170667a.jpg"
+          image="https://dis-leur.fr/wp-content/uploads/2021/09/istockphoto-1159637659-170667a.jpg"//driver.webp
           title="Doctor Appointments"
           description="Ensure timely arrival to your medical appointments with our reliable transportation service."
           link="/services"
@@ -147,7 +142,7 @@ const Home = () => {
 
       <article className="service-card">
         <ServiceCard 
-          image="https://www.shutterstock.com/image-photo/elderly-man-60c-glasses-sitting-600nw-1990042985.jpg"
+          image="https://www.shutterstock.com/image-photo/elderly-man-60c-glasses-sitting-600nw-1990042985.jpg"//driverold
           title="Non-Emergency Transportation"
           description="Specialized services for wheelchair and stretcher transportation, ensuring comfort and safety."
           link="/services"
@@ -157,7 +152,7 @@ const Home = () => {
 
       <article className="service-card">
         <ServiceCard 
-          image="https://parade.com/.image/t_share/MTkwNTgwOTg0ODcxMzMwOTQx/black-people-covid-vaccine-1-jpg.jpg"
+          image="https://parade.com/.image/t_share/MTkwNTgwOTg0ODcxMzMwOTQx/black-people-covid-vaccine-1-jpg.jpg"//vaccine
           title="COVID-19 Vaccine Transportation"
           description="Providing safe and reliable transportation for individuals receiving their COVID-19 vaccines."
           link="/services"
@@ -169,14 +164,10 @@ const Home = () => {
   </div>
 </section>
 
-<section className="section opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out py-40">
-      {/* Background Image */}
+<section className="section background-image-section section1 py-40">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100"
-        style={{
-          backgroundImage:
-            "url('https://www.itl.cat/pngfile/big/95-958689_bg-chocolate-brown-background-design.png')",
-        }}
+        
       ></div>
 
       {/* Content */}
@@ -188,43 +179,43 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {/* Icon 1 */}
           <div className="flex flex-col items-center">
-            <FaUserTie style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Professional Icon */}
+            <FaUserTie className="icon" /> {/* Professional Icon */}
             <h3 className="text-xl font-semibold text-white">Professional Drivers</h3>
           </div>
 
           {/* Icon 2 */}
           <div className="flex flex-col items-center">
-            <FaCarSide style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Car/Vehicle Icon */}
+            <FaCarSide className="icon" /> {/* Car/Vehicle Icon */}
             <h3 className="text-xl font-semibold text-white">Comfortable Vehicles</h3>
           </div>
 
           {/* Icon 3 */}
           <div className="flex flex-col items-center">
-            <FaClock style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Clock Icon */}
+            <FaClock className="icon" /> {/* Clock Icon */}
             <h3 className="text-xl font-semibold text-white">On-Time Service</h3>
           </div>
 
           {/* Icon 4 */}
           <div className="flex flex-col items-center">
-            <FaHeart style={{ color: '#FFFFFF' }} className="text-7xl text-brown-700 mb-4" /> {/* Heart Icon */}
+            <FaHeart className="icon" /> {/* Heart Icon */}
             <h3 className="text-xl font-semibold text-white">Personalized Care</h3>
           </div>
           <div className="flex flex-col items-center">
-    <FaDollarSign style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <FaDollarSign className="icon" /> {/* White color */}
     <h3 className="text-xl font-semibold text-white">Affordable Price</h3>
   </div>
 
   {/* Safety */}
   <div className="flex flex-col items-center">
-    <FaShieldAlt style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <FaShieldAlt className="icon" /> {/* White color */}
     <h3 className="text-xl font-semibold text-white">Safety First</h3>
   </div>
   <div className="flex flex-col items-center">
-    <AiOutlineClockCircle style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <AiOutlineClockCircle className="icon" /> {/* White color */}
     <h3 className="text-xl font-semibold text-white">24-Hour</h3>
   </div>
   <div className="flex flex-col items-center">
-    <FaCheckCircle style={{ color: '#FFFFFF' }} className="text-7xl mb-4" /> {/* White color */}
+    <FaCheckCircle className="icon" /> {/* White color */}
     <h3 className="text-xl font-semibold text-white">Reliable Service</h3>
   </div>
         </div>
@@ -276,12 +267,6 @@ const Home = () => {
 
       </div>
 
-      <style jsx>{`
-        .section.visible {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      `}</style>
     </div>
   );
 };
