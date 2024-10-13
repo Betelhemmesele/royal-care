@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto my-0 px-4 md:px-8 flex items-center justify-between">
-      <div className="flex items-center md:flex">
+      <div className="items-center md:flex hidden">
   <Link to="/">
     <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
   </Link>
