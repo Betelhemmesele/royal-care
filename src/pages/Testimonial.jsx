@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { FaQuoteLeft } from 'react-icons/fa';
 import './TestimonialPage.css'; 
 import CardSection from "../components/Contactcard";
+import abstract from '../assets/abstract.webp';
 const testimonials = [
   {
     text: "Royal Care Transportation has been a lifesaver for our family! My father needs regular dialysis appointments, and the team has been incredibly reliable and caring. The drivers are always on time, courteous, and assist him with getting in and out of the vehicle. We feel so much peace of mind knowing he's in good hands. Highly recommend their service to anyone in need of elderly transportation.",
@@ -71,7 +72,7 @@ const TestimonialPage = () => {
         ))}
       </Slider>
       <CardSection
-  backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg" // Background image for the section
+  backgroundImage={abstract} // Background image for the section
   heading="Send Us Review"
   content="If you have anything to tell the world about us , please click below."
   buttonText="click Here"

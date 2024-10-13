@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // assuming you're using react-router-dom for navigation
 import {FaPhoneAlt} from 'react-icons/fa'; // import a phone icon from react-icons
-import image from '../assets/royal.jpg';
+import image from '../assets/royal.webp';
 
 const Header = () => {
   // State for mobile menu toggle
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto my-0 px-4 md:px-8 flex items-center justify-between">
-      <div className="flex items-center md:flex hidden">
+      <div className="flex items-center md:flex">
   <Link to="/">
     <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
   </Link>

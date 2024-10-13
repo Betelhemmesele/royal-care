@@ -1,7 +1,9 @@
 import React from 'react';
 import CardSection from '../components/Contactcard';
 import ServicesSection from '../components/ServiceSection';
-
+import fourelders from '../assets/fourelders.webp';
+import seniorlady from '../assets/seniorlady.webp';
+import abstract from '../assets/abstract.webp';
 const AboutUs = () => {
   return (
     <section className="bg-gray-100 pt-32 pb-0 px-2 md:px-52" aria-labelledby="about-us-header">
@@ -68,7 +70,7 @@ const AboutUs = () => {
             {/* Image on the right half */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0">
               <img
-                src="https://img.freepik.com/premium-photo/four-elderly-people-different-ethnicities-are-laughing-smiling-together_486608-239.jpg"
+                src={fourelders}//four elderly
                 alt="Group of elderly people smiling together"
                 className="w-full h-[400px] rounded-lg shadow-md"
               />
@@ -78,7 +80,7 @@ const AboutUs = () => {
 
         {/* Services Section */}
         <ServicesSection
-          backgroundImage="https://thumbs.dreamstime.com/b/senior-lady-getting-out-car-caregiver-helping-her-holding-hands-elderly-woman-has-problem-standing-up-back-seat-297951090.jpg"
+          backgroundImage={seniorlady}//senoir lady
           heading="We Offer a Multitude of Services"
           description="We offer professional transportation services for medical appointments, rehabilitation sessions, and social events, both long and short distance."
           servicesList={[
@@ -95,7 +97,7 @@ const AboutUs = () => {
 
           {/* Contact Section */}
           <CardSection
-  backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg" // Background image for the section
+  backgroundImage={abstract} // Background image for the section
   heading="Contact Us"
   content="For inquiries or to schedule a ride, please contact us at (214)302-3232 or email us at Support@royalcaretransportation.com. We look forward to serving you!"
   buttonText="Contact Us"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import CardSection from '../components/Contactcard';
+import abstract from '../assets/abstract.webp';
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -98,7 +99,7 @@ const FaqSection = () => {
       
     </div>
     <CardSection
-    backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg" // Background image for the section
+    backgroundImage={abstract} // Background image for the section
     heading="Contact Us"
     content="For inquiries or to schedule a ride, please contact us at (214)302-3232 or email us at Support@royalcaretransportations.com. We look forward to serving you!"
     buttonText="Schedule A Ride"

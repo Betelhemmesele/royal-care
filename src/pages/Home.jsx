@@ -6,6 +6,13 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/homeService';
 import './HomePage.css';
+import oldppl from '../assets/oldppl.webp';
+import driver from '../assets/driver.webp';
+import smilingeld from '../assets/smillingeld.webp';
+import carnold from '../assets/carnold.webp';
+import vaccine from '../assets/vaccine.webp';
+import abstract from '../assets/abstract.webp';
+import helpingcar from '../assets/helpingcar.webp';
 const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -86,7 +93,7 @@ const Home = () => {
     {/* Image on one half */}
     <div className="w-full md:w-1/2 mb-8 md:mb-0">
       <img
-        src="https://st3.depositphotos.com/13194036/18504/i/450/depositphotos_185049012-stock-photo-care.jpg"//oldppl
+        src={oldppl}//oldppl
         alt="Royal Care Transportation"
         className="w-full h-auto rounded-full md:rounded-lg shadow-md"
       />
@@ -122,7 +129,7 @@ const Home = () => {
       {/* Service Cards */}
       <article className="service-card">
         <ServiceCard 
-          image="https://carro.sg/blog/wp-content/uploads/2017/06/The-MV-1-www.trucktrend.com-news-1507-mobility-ventures-updates-2016-mv-1-with-new-accessibility.jpg"
+          image={helpingcar}
           title="Senior Living Transportation"
           description="Providing safe and reliable transportation for seniors to and from their senior living facilities."
           link="/services"
@@ -132,7 +139,7 @@ const Home = () => {
 
       <article className="service-card">
         <ServiceCard 
-          image="https://dis-leur.fr/wp-content/uploads/2021/09/istockphoto-1159637659-170667a.jpg"//driver.webp
+          image={driver}//driver.webp
           title="Doctor Appointments"
           description="Ensure timely arrival to your medical appointments with our reliable transportation service."
           link="/services"
@@ -142,7 +149,7 @@ const Home = () => {
 
       <article className="service-card">
         <ServiceCard 
-          image="https://www.shutterstock.com/image-photo/elderly-man-60c-glasses-sitting-600nw-1990042985.jpg"//driverold
+          image={carnold}//driverold
           title="Non-Emergency Transportation"
           description="Specialized services for wheelchair and stretcher transportation, ensuring comfort and safety."
           link="/services"
@@ -152,7 +159,7 @@ const Home = () => {
 
       <article className="service-card">
         <ServiceCard 
-          image="https://parade.com/.image/t_share/MTkwNTgwOTg0ODcxMzMwOTQx/black-people-covid-vaccine-1-jpg.jpg"//vaccine
+          image={vaccine}//vaccine
           title="COVID-19 Vaccine Transportation"
           description="Providing safe and reliable transportation for individuals receiving their COVID-19 vaccines."
           link="/services"
@@ -226,7 +233,7 @@ const Home = () => {
     <div className="flex flex-col lg:flex-row items-center">
     <div className="lg:w-1/2">
         <img 
-          src="https://img.freepik.com/premium-photo/smiling-elderly-couple-park_1022456-199628.jpg" 
+          src={smilingeld} 
           alt="Testimonial" 
           className="w-full rounded-lg shadow-lg object-cover"
         />
@@ -255,7 +262,7 @@ const Home = () => {
 
 
 <CardSection
-  backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg"
+  backgroundImage={abstract}
   heading="Ready to Experience the Royal Treatment?"
   content="Booking your ride with Royal Care Transportation is easy and hassle-free. Whether you need transportation for a single trip or regular scheduled services, we are here to accommodate your needs."
   buttonText="Schedule A Ride"

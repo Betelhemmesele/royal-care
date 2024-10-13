@@ -1,21 +1,26 @@
 import React from 'react';
 import CardSection from '../components/Contactcard';
-
+import abstract from '../assets/abstract.webp';
+import seniorlivingsection from '../assets/serviceSection/seniorlivingsection.webp';
+import covid from '../assets/serviceSection/covid.webp';
+import doctorapp from '../assets/serviceSection/doctorapp.webp';
+import plane from '../assets/serviceSection/plane.webp';
+import wheeltransport from '../assets/serviceSection/wheeltransport.webp';
 const servicesData = [
   {
     title: "Senior Living Transportation",
     description: "Reliable transportation for seniors to help them get to their destinations with ease and comfort.",
-    imageUrl: "https://media.istockphoto.com/id/1397009129/photo/a-senior-man-helped-by-a-young-male-carer-out-of-car-and-into-wheelchair.jpg?s=612x612&w=0&k=20&c=nQ2HUNS1wvVmIgflrdFCZjY_nLjQyr4uHOSYl8yLivI=",
+    imageUrl: seniorlivingsection, // Local image
   },
   {
     title: "Doctor Appointments",
     description: "On-time transportation for scheduled medical appointments.",
-    imageUrl: "https://demigos.com/media/cache/61/e8/61e8be99d482c40c4f294b577a7d2e92.jpg",
+    imageUrl: doctorapp, // Local image
   },
   {
     title: "Non-Emergency Transportation",
     description: "Safe and secure transportation for non-emergency medical needs, including wheelchair and stretcher services.",
-    imageUrl: "https://irp.cdn-website.com/ea73f6f8/dms3rep/multi/wheelchair-transport-vans-02bfd378.png",
+    imageUrl: wheeltransport, // Local image
     subServices: [
       "Wheelchair Transportation",
       "Stretcher Services",
@@ -24,12 +29,12 @@ const servicesData = [
   {
     title: "Airport Transportation",
     description: "Convenient and timely airport transfers for all passengers.",
-    imageUrl: "https://media.ceetiz.com/activity/GRAPRA040/avion.jpg",
+    imageUrl: plane, // Local image
   },
   {
     title: "COVID-19 Vaccine Transportation",
     description: "Transportation to and from COVID-19 vaccination sites.",
-    imageUrl: "https://news.panasonic.com/global/stories/images/07_Vaccine_Transport_2021.jpg",
+    imageUrl: covid, // Local image
   },
 ];
 
@@ -85,7 +90,7 @@ const ServicesPage = () => {
 
       {/* Contact Section */}
       <CardSection
-        backgroundImage="https://static.vecteezy.com/system/resources/previews/003/435/330/non_2x/abstract-orange-background-free-vector.jpg"
+        backgroundImage={abstract}
         heading="Contact Us"
         content="For inquiries or to schedule a ride, please contact us at (214)302-3232 or email us at Support@royalcaretransportations.com. We look forward to serving you!"
         buttonText="Schedule A Ride"
