@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto my-0 px-4 md:px-2 lg:px-8 flex items-center justify-between">
       <div className="items-center hidden md:flex">
   <Link to="/">
-    <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
+    <img src={image} alt="Royal Care Logo" class="h-24 w-auto"  />
   </Link>
 </div>
 
@@ -78,6 +78,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {/* Conditionally render Hamburger or X icon */}
             {isMenuOpen ? (
@@ -117,12 +118,12 @@ const Header = () => {
           <div className="flex items-center mx-auto">
           <Link to="/">
 
-            <img src={image} alt="Royal Care Logo" className="h-24 w-40" />
+            <img src={image} alt="Royal Care Logo" class="max-h-24 w-auto"  />
             </Link>
           </div>
 
           {/* Call Icon (right side) */}
-          <a href="tel:+1214302-3232" className="text-orange-900 hover:text-orange-700 transition duration-300">
+          <a href="tel:+1214302-3232" className="text-orange-900 hover:text-orange-700 transition duration-300" aria-label="Follow us on Twitter">
             <FaPhoneAlt className="w-6 h-6" />
           </a>
         </div>

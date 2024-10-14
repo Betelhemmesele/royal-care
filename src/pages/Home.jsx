@@ -113,7 +113,7 @@ const Home = () => {
         href="/about-us" 
         className="bg-orange-900 text-white py-2 px-6 rounded-lg hover:bg-orange-800 transition duration-200"
       >
-        Read More
+        Learn about Our Company
       </a>
     </div>
   </div>

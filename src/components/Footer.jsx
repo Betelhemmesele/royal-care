@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand Description */}
           <div className="mb-8 md:mb-0">
             <h2 className="text-2xl font-bold mb-4">Royal Care Transportation</h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-white mb-4">
               We pride ourselves on offering a reliable, caring, and comfortable transportation service that feels like family. Whether it's a doctor's appointment or a family event, let us take the journey with you.
             </p>
             <p className="italic text-gray-300">"Your comfort is our top priority, and every mile is taken with care."</p>
@@ -40,23 +40,23 @@ const Footer = () => {
           {/* Social Media Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-            <div className="flex  justify-center md:justify-start space-x-6 lg:space-x-6 md:space-x-3"> {/* Increased space between social icons */}
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <FaFacebook className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <FaTwitter className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <FaInstagram className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <FaLinkedin className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
-              </a>
-              <a href="https://google.com/business" target="_blank" rel="noreferrer">
-                <FaGoogle className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
-              </a>
-            </div>
+            <div className="flex justify-center md:justify-start space-x-6 lg:space-x-6 md:space-x-3">
+    <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Follow us on Facebook">
+        <FaFacebook className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Follow us on Twitter">
+        <FaTwitter className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Follow us on Instagram">
+        <FaInstagram className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="Follow us on LinkedIn">
+        <FaLinkedin className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+    </a>
+    <a href="https://google.com/business" target="_blank" rel="noreferrer" aria-label="Find us on Google Business">
+        <FaGoogle className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+    </a>
+</div>
           </div>
         </div>
         

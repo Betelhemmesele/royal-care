@@ -16,7 +16,7 @@ const ServiceCard = ({ image, title, description, link }) => {
           href={link} 
           className="bg-orange-900 text-white py-2 px-4 rounded-lg hover:bg-orange-800 transition duration-200 mt-auto"
         >
-          Learn More
+          Explore Our Services
         </a>
       </div>
     </div>
