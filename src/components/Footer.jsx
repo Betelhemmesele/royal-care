@@ -3,8 +3,8 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin ,FaGoogle} from 'react-i
 const Footer = () => {
   return (
     <footer className="bg-orange-900 text-white py-12">
-      <div className="container mx-auto max-w-6xl px-4 md:px-1">
-        <div className="flex flex-col md:flex-row justify-between md:space-x-12"> {/* Increased the space between columns */}
+      <div className="container mx-auto max-w-9xl px-4 md:px-1">
+        <div className="flex flex-col md:flex-row justify-between md:space-x-2 lg:space-x-12"> {/* Increased the space between columns */}
           
           {/* Brand Description */}
           <div className="mb-8 md:mb-0">
@@ -20,7 +20,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li><a href="/" className="hover:text-orange-600 transition transform hover:scale-110 duration-200 inline-block">Home</a></li>
-              <li><a href="/about" className="hover:text-orange-600 transition transform hover:scale-110 duration-200 inline-block">About Us</a></li>
+              <li><a href="/about-us" className="hover:text-orange-600 transition transform hover:scale-110 duration-200 inline-block">About Us</a></li>
               <li><a href="/services" className="hover:text-orange-600 transition transform hover:scale-110 duration-200 inline-block" >Services</a></li>
               <li><a href="/testimonials" className="hover:text-orange-600 transition transform hover:scale-110 duration-200 inline-block">Testimonials</a></li>
               <li><a href="/contact-us" className="hover:text-orange-600 transition transform hover:scale-110 duration-200 inline-block">Contact Us</a></li>
@@ -40,21 +40,21 @@ const Footer = () => {
           {/* Social Media Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-            <div className="flex  justify-center md:justify-start space-x-6"> {/* Increased space between social icons */}
+            <div className="flex  justify-center md:justify-start space-x-6 lg:space-x-6 md:space-x-3"> {/* Increased space between social icons */}
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <FaFacebook className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+                <FaFacebook className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <FaTwitter className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+                <FaTwitter className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <FaInstagram className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+                <FaInstagram className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <FaLinkedin className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+                <FaLinkedin className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
               <a href="https://google.com/business" target="_blank" rel="noreferrer">
-                <FaGoogle className="text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+                <FaGoogle className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
             </div>
           </div>

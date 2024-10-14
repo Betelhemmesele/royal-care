@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="container mx-auto my-0 px-4 md:px-8 flex items-center justify-between">
-      <div className="items-center md:flex hidden">
+      <div className="container mx-auto my-0 px-4 md:px-2 lg:px-8 flex items-center justify-between">
+      <div className="items-center hidden md:flex">
   <Link to="/">
     <img src={image} alt="Royal Care Logo" className="h-24 w-48" />
   </Link>
@@ -22,57 +22,56 @@ const Header = () => {
 
 
         {/* Desktop Navigation Links (Only for md and above) */}
-        <nav className="hidden md:flex space-x-4">
-          <Link
-            to="/"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            Home
-          </Link>
-          <Link
-            to="/services"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            Services
-          </Link>
-          <Link
-            to="/request-trip"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            Request a Trip
-          </Link>
-          <Link
-            to="/contact-us"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            Contact Us
-          </Link>
-          <Link
-            to="/about-us"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            About Us
-          </Link>
-          <Link
-            to="/testimonials"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            Testimonials
-          </Link>
-          <Link
-            to="/compliance"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            Compliance
-          </Link>
-          <Link
-            to="/faqs"
-            className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 rounded-sm transition duration-300"
-          >
-            FAQs
-          </Link>
-        </nav>
-
+<nav className="hidden md:flex space-x-4 md:space-x-2 lg:space-x-4">
+      <Link
+        to="/"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-1 lg:px-4 rounded-sm transition duration-300"
+      >
+        Home
+      </Link>
+      <Link
+        to="/services"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        Services
+      </Link>
+      <Link
+        to="/request-trip"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        Request a Trip
+      </Link>
+      <Link
+        to="/contact-us"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        Contact Us
+      </Link>
+      <Link
+        to="/about-us"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        About Us
+      </Link>
+      <Link
+        to="/testimonials"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        Testimonials
+      </Link>
+      <Link
+        to="/compliance"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        Compliance
+      </Link>
+      <Link
+        to="/faqs"
+        className="text-gray-700 hover:bg-orange-800 hover:text-white px-4 py-2 md:px-2 lg:px-4 rounded-sm transition duration-300"
+      >
+        FAQs
+      </Link>
+    </nav>
         {/* Mobile Header (Only for small screens) */}
         <div className="md:hidden flex items-center my-1 justify-between w-full">
           {/* Mobile Menu Toggle (left side) */}
