@@ -1,0 +1,5 @@
+# Ads.txt for Royal Care Transportation
+# This file is used to declare authorized sellers of advertising
+google.com
+# Contact information
+CONTACT=royalcare.transit@gmail.com

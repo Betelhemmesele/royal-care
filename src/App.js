@@ -10,6 +10,7 @@ import  SafetyCompliancePage from '../src/pages/SecurityCompliance';
 import ContactUsPage from '../src/pages/ContactUs';
 import RequestTripPage from '../src/pages/RequestTrip';
 import FaqSection from './pages/Faqs';
+import NotFound from '../src/pages/NotFound';
 function App() {
   return (
     <Router>
@@ -27,6 +28,8 @@ function App() {
           <Route path="/contact-us" element={< ContactUsPage />} />
            <Route path="/request-trip" element={< RequestTripPage />} />
            <Route path="/faqs" element={< FaqSection />} />
+           <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
+
         </Routes>
 
         <Footer />
