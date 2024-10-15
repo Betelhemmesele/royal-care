@@ -45,7 +45,7 @@ const ServicesPage = () => {
         
         {/* Page Header */}
         <header className="text-center mb-12">
-          <h2 id="services-header" className="text-4xl font-bold text-gray-900">Our Services</h2>
+          <h1 id="services-header" className="text-4xl font-bold text-gray-900">Our Services</h1>
           <p className="text-lg text-gray-700 mt-4">
             We offer a wide range of non-emergency transportation services, ensuring our clients reach their destinations safely and comfortably.
           </p>

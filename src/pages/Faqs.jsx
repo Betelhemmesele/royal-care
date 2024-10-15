@@ -86,7 +86,7 @@ const FaqSection = () => {
     <div>
       <div className="max-w-[1140px] mx-auto mt-32 mb-2 p-6 bg-white shadow-lg rounded-lg">
       <div className="text-center bg-gray-100 py-16 rounded-lg border-orange-900 border-x-2 mb-12">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions (FAQs)</h2>
+      <h1 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions (FAQs)</h1>
       <p className="text-lg text-gray-600 mb-8">
         Welcome to our FAQ page! Below, you’ll find answers to the most common questions about Royal Care Transportation. If you don’t see your question here, feel free to contact us directly.
       </p>

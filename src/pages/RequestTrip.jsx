@@ -96,7 +96,7 @@ const RequestTripPage = () => {
         <div className="flex items-center mb-6">
           <FaPhoneAlt className="h-16 w-16 text-orange-700 mr-6" />
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800">Do you want transportation?</h2>
+            <h1 className="text-2xl font-semibold text-gray-800">Do you want transportation?</h1>
             <p className="mt-2 text-lg text-gray-600">
               Call us at:
               <a href="tel:+(214)302-3232" className="text-orange-700 font-bold ml-2">

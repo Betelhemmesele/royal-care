@@ -60,7 +60,7 @@ const TestimonialPage = () => {
   return (
     <div className="max-w-7xl mt-32 mb-0 mx-auto py-1 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl border-orange-700 border-x-4 bg-gray-200 my-2 mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-extrabold text-gray-900 mb-12">What Our Clients Say</h2>
+        <h1 className="text-center text-3xl font-extrabold text-gray-900 mb-12">What Our Clients Say</h1>
       </div>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
