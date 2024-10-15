@@ -68,12 +68,12 @@ const Home = () => {
           {/* Buttons */}
           <div className="md:mt-4 flex flex-col sm:flex-row sm:justify-start">
   <Link to="/contact-us">
-    <button className="w-48 bg-orange-900 text-white py-3 px-2 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
+    <button className="w-48 bg-orange-900 text-white py-3 px-4 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-opacity-50">
     Contact Us
     </button>
   </Link>
   <Link to="/request-trip">
-    <button className="mt-4 sm:mt-0 sm:ml-2 w-48 bg-orange-900 text-white py-3 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200">
+    <button className="mt-4 sm:mt-0 sm:ml-2 w-48 bg-orange-900 text-white py-3 px-4 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-opacity-50">
        Book Your Trip
     </button>
   </Link>

@@ -27,7 +27,7 @@ const ContactUsPage = () => {
     // Add CC email to form data
     const templateParams = {
       ...formData, // Includes name, email, message
-      cc_email: 'Support@royalcaretransportations.com' // Adding CC email here
+      cc_email: 'support@royalcaretrasportation.com' // Adding CC email here
     };
 
     // EmailJS integration
@@ -71,7 +71,7 @@ const ContactUsPage = () => {
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
           <p className="text-lg text-gray-600">+1 214 302-3232</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Email</h3>
-          <p className="text-lg text-gray-600">Support@royalcaretransportations.com</p>
+          <p className="text-lg text-gray-600">support@royalcaretrasportation.com</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Address</h3>
           <p className="text-lg text-gray-600">123 Main St, Katy, TX 77450</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Working Hours</h3>
