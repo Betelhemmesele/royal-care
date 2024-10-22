@@ -1,4 +1,4 @@
-import { FaTwitter, FaInstagram, FaLinkedin, FaGooglePlus ,FaFacebookF} from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedin ,FaFacebookF,FaEnvelope} from 'react-icons/fa';
 import { useEffect } from 'react';
 
 const Footer = () => {
@@ -86,9 +86,14 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="Follow us on LinkedIn">
                 <FaLinkedin className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
-              <a href="https://google.com/business" target="_blank" rel="noreferrer" aria-label="Find us on Google Business">
+              <a href="https://mail.zoho.com/" target="_blank" rel="noreferrer" aria-label="Login to Zoho Mail">
+  <FaEnvelope className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
+</a>
+
+
+              {/* <a href="https://google.com/business" target="_blank" rel="noreferrer" aria-label="Find us on Google Business">
                 <FaGooglePlus className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
