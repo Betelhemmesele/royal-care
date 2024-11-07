@@ -99,8 +99,8 @@ const RequestTripPage = () => {
             <h1 className="text-2xl font-semibold text-gray-800">Do you want transportation?</h1>
             <p className="mt-2 text-lg text-gray-600">
               Call us at:
-              <a href="tel:+(214)302-3232" className="text-orange-700 font-bold ml-2">
-                +(214)302-3232
+              <a href="tel:+(214)702-3232" className="text-orange-700 font-bold ml-2">
+                +(214)702-3232
               </a>
             </p>
             <p className="mt-2 text-lg text-gray-600">
