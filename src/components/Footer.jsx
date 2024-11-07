@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
             <ul className="space-y-3">
-              <li><span className="font-semibold">Phone:</span> (214) 302-3232</li>
+              <li><span className="font-semibold">Phone:</span> (214) 702-3232</li>
               <li><span className="font-semibold">Email:</span>support@royalcaretrasportation.com</li>
               <li><span className="font-semibold">Address:</span> 1234 Care St, Compassion City, USA</li>
             </ul>
@@ -86,7 +86,7 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="Follow us on LinkedIn">
                 <FaLinkedin className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
               </a>
-              <a href="https://mail.zoho.com/" target="_blank" rel="noreferrer" aria-label="Login to Zoho Mail">
+              <a href="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com" target="_blank" rel="noreferrer" aria-label="Login to Zoho Mail">
   <FaEnvelope className="text-3xl md:text-2xl lg:text-3xl hover:text-orange-400 transition transform hover:scale-110 duration-200" />
 </a>
 

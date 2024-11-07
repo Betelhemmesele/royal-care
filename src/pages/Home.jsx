@@ -1,6 +1,6 @@
 
 import { useEffect,} from 'react';
-import { FaUserTie,FaCheckCircle, FaCarSide, FaClock, FaDollarSign, FaShieldAlt,FaHeart } from 'react-icons/fa';
+import { FaUserTie,FaCheckCircle, FaCarSide, FaClock, FaDollarSign, FaShieldAlt,FaHeart,FaEnvelope } from 'react-icons/fa';
 import CardSection from '../components/Contactcard';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
@@ -77,6 +77,20 @@ const Home = () => {
        Book Your Trip
     </button>
   </Link>
+  <Link 
+  to="https://accounts.zoho.com/signin?servicename=VirtualOffice&signupurl=https://www.zoho.com/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.com"
+  target="_blank"
+  rel="noreferrer"
+>
+  <button className="mt-4 sm:mt-0 sm:ml-2 w-48 bg-orange-900 text-white py-3 px-4 md:px-10 rounded-3xl hover:bg-orange-800 transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-opacity-50 flex items-center justify-center gap-2">
+    <span>Zoho Mail</span>
+    <FaEnvelope className="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl" />
+  </button>
+</Link>
+
+ 
+
+
 </div>
         </div>
       </div>

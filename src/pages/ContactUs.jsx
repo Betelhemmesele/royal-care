@@ -69,7 +69,7 @@ const ContactUsPage = () => {
         {/* Contact Information */}
         <div className="shadow-lg p-6 border-orange-900 border-y-2 rounded-lg bg-white hover:shadow-xl transition-transform duration-200">
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
-          <p className="text-lg text-gray-600">+1 214 302-3232</p>
+          <p className="text-lg text-gray-600">+1-214-702-3232</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Email</h3>
           <p className="text-lg text-gray-600">support@royalcaretrasportation.com</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Address</h3>
