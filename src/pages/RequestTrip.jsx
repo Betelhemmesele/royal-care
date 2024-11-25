@@ -41,7 +41,7 @@ const RequestTripPage = () => {
       pickupTime: formData.pickupTime,
       tripType: formData.tripType,
       message: formData.message,
-      cc_email: 'support@royalcaretrasportation.com',
+      cc_email: 'support@royalcaretrans.com',
     };
     console.log("Email Params:", emailParams);
     // Send the email using EmailJS

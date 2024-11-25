@@ -27,7 +27,7 @@ const ContactUsPage = () => {
     // Add CC email to form data
     const templateParams = {
       ...formData, // Includes name, email, message
-      cc_email: 'support@royalcaretrasportation.com' // Adding CC email here
+      cc_email: 'support@royalcaretrans.com' // Adding CC email here
     };
 
     // EmailJS integration
