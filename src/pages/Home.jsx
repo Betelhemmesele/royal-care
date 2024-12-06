@@ -51,13 +51,13 @@ const Home = () => {
         <div className="flex flex-col justify-center text-left text-white w-full md:w-1/2 space-y-4">
           {/* Heading */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                Welcome to Royal Care Transportation Katy TX
+                Welcome to Royal Care Transportation Dallas and Rockwell
               </h1>
               <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl">
                 Handicapped transportation service for Your Loved One
               </h2>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
-                Your trusted source for <strong>elderly transportation</strong> and <strong>non-emergency medical transport</strong> in <strong>Katy, Texas</strong>.
+                Your trusted source for <strong>elderly transportation</strong> and <strong>non-emergency medical transport</strong> in <strong>Dallas and Rockwell</strong>.
               </p>
               {/* Subheading */}
               <ul className="text-base sm:text-lg md:text-xl lg:text-2xl list-disc pl-5">

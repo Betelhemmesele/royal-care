@@ -22,7 +22,7 @@ const FaqSection = () => {
     const faqs = [
         {
           question: 'What services do you provide?',
-          answer: 'We specialize in non-emergency medical transportation (NEMT) for seniors and individuals requiring assistance. Our services include transportation to medical appointments, rehabilitation sessions, social events, and other non-emergency destinations in Katy, Texas and the surrounding areas.',
+          answer: 'We specialize in non-emergency medical transportation (NEMT) for seniors and individuals requiring assistance. Our services include transportation to medical appointments, rehabilitation sessions, social events, and other non-emergency destinations in Dallas and Rockwell and the surrounding areas.',
         },
         {
           question: 'How do I book a ride?',
@@ -46,7 +46,7 @@ const FaqSection = () => {
         },
         {
           question: 'What areas do you serve?',
-          answer: 'Our primary service area is Katy, Texas, and the surrounding regions. If you\'re outside this area and need transportation, please contact us, and we’ll do our best to accommodate your request.',
+          answer: 'Our primary service area is Dallas and Rockwell, and the surrounding regions. If you\'re outside this area and need transportation, please contact us, and we’ll do our best to accommodate your request.',
         },
         {
           question: 'Can you provide transportation for long-distance trips?',
@@ -101,7 +101,7 @@ const FaqSection = () => {
     <CardSection
     backgroundImage={abstract} // Background image for the section
     heading="Contact Us"
-    content="For inquiries or to schedule a ride, please contact us at (214)702-3232 or email us at support@royalcaretrasportation.com. We look forward to serving you!"
+    content="For inquiries or to schedule a ride, please contact us at (214)702-3232 or email us at dispatch@royalcaretrans.com. We look forward to serving you!"
     buttonText="Schedule A Ride"
     buttonLink="request-trip" // This will open the default mail client
   />

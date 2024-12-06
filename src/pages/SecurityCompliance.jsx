@@ -24,7 +24,7 @@ const safetyData = [
       title: "Compliance with Regulations",
       description: "Royal Care Transportation adheres to all local, state, and federal regulations:",
       items: [
-        { label: "Licensing", content: "Maintaining necessary licenses and permits in Texas and Katy areas." },
+        { label: "Licensing", content: "Maintaining necessary licenses and permits in Dallas and Rockwell areas." },
         { label: "Insurance Coverage", content: "Full insurance to ensure peace of mind for passengers and families." },
       ]
     },
@@ -84,7 +84,7 @@ const SafetyCompliancePage = () => {
       <CardSection
   backgroundImage={abstract} // Background image for the section
   heading="Contact Us"
-  content="For inquiries or to schedule a ride, please contact us at (214)702-3232 or email us at support@royalcaretrasportation.com. We look forward to serving you!"
+  content="For inquiries or to schedule a ride, please contact us at (214)702-3232 or email us at dispatch@royalcaretrans.com. We look forward to serving you!"
   buttonText="Schedule A Ride"
   buttonLink="request-trip" // This will open the default mail client
 />

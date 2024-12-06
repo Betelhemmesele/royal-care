@@ -73,7 +73,7 @@ const ContactUsPage = () => {
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Email</h3>
           <p className="text-lg text-gray-600">support@royalcaretrasportation.com</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Address</h3>
-          <p className="text-lg text-gray-600">123 Main St, Katy, TX 77450</p>
+          <p className="text-lg text-gray-600">Dallas and Rockwell</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Working Hours</h3>
           <p className="text-lg text-gray-600">24-Hours</p>
         </div>
