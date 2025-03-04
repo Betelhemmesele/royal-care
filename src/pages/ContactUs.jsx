@@ -71,7 +71,7 @@ const ContactUsPage = () => {
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
           <p className="text-lg text-gray-600">+1-214-702-3232</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Email</h3>
-          <p className="text-lg text-gray-600">support@royalcaretrasportation.com</p>
+          <p className="text-lg text-gray-600">dispatch@royalcaretrans.com</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Address</h3>
           <p className="text-lg text-gray-600">Dallas and Rockwell</p>
           <h3 className="text-xl pt-2 font-semibold text-gray-900 mb-2">Working Hours</h3>
